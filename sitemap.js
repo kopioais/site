@@ -98,3 +98,125 @@ function showFeedList(_0x1bf8x16) {
             _0x1bf8x1e = postdate[_0x86cc[27]](8, 10);
             _0x1bf8x1f = tocConfig[_0x86cc[65]][parseInt(_0x1bf8x1d, 10) - 1];
             _0x1bf8x10 += _0x86cc[66];
+            _0x1bf8x10 += _0x86cc[67] + _0x1bf8x1a + _0x86cc[68] + tocConfig[_0x86cc[59]] + _0x86cc[69] + tocConfig[_0x86cc[59]] + _0x86cc[70] + _0x1bf8x1b + _0x86cc[71] + _0x1bf8x19 + _0x86cc[72];
+            _0x1bf8x10 += _0x86cc[73] + _0x1bf8x1a + _0x86cc[74] + _0x1bf8x19 + _0x86cc[75] + _0x1bf8x19 + _0x86cc[76];
+            _0x1bf8x10 += _0x86cc[77] + cropFeed(_0x1bf8x12, tocConfig[_0x86cc[78]]) + _0x86cc[79];
+            _0x1bf8x10 += _0x86cc[80] + _0x1bf8x1e + _0x86cc[81] + _0x1bf8x1f + _0x86cc[81] + _0x1bf8x1c + _0x86cc[82];
+        };
+        if (input[_0x86cc[83]] !== _0x86cc[32] && window[_0x86cc[2]][_0x86cc[1]] == _0x86cc[4]) {
+            resultDesc[_0x86cc[41]] = _0x86cc[84] + input[_0x86cc[83]] + _0x86cc[85];
+        } else {
+            resultDesc[_0x86cc[41]] = _0x86cc[32];
+        };
+        feedContainer[_0x86cc[41]] += _0x1bf8x10;
+        if (nextPage) {
+            if (window[_0x86cc[2]][_0x86cc[1]] && window[_0x86cc[2]][_0x86cc[1]] !== _0x86cc[3]) {
+                _0x1bf8x10 = _0x86cc[86] + tocConfig[_0x86cc[87]] + _0x86cc[88];
+            } else {
+                _0x1bf8x10 = _0x86cc[89] + tocConfig[_0x86cc[87]] + _0x86cc[88];
+            };
+        } else {
+            _0x1bf8x10 = _0x86cc[90] + tocConfig[_0x86cc[91]] + _0x86cc[88];
+        };
+        feedNav[_0x86cc[41]] = _0x1bf8x10;
+        input[_0x86cc[83]] = _0x86cc[32];
+        labelSorter[_0x86cc[14]](_0x86cc[94])[0][_0x86cc[93]](_0x86cc[92]);
+        orderByer[_0x86cc[93]](_0x86cc[92]);
+    } else {
+        feedContainer[_0x86cc[41]] = _0x86cc[32];
+        alert(tocConfig[_0x86cc[95]]);
+        feedNav[_0x86cc[41]] = _0x86cc[96] + tocConfig[_0x86cc[91]] + _0x86cc[88];
+        searchDesc[_0x86cc[41]] = _0x86cc[32];
+    };
+};
+
+function initResult(_0x1bf8x14) {
+    var _0x1bf8x3, _0x1bf8x10;
+    if (_0x1bf8x14 == 1) {
+        _0x1bf8x3 = nextPage[_0x86cc[26]](_0x86cc[97]);
+        _0x1bf8x10 = nextPage[_0x86cc[27]](_0x1bf8x3);
+    } else {
+        if (_0x1bf8x14 == 2) {
+            _0x1bf8x3 = nextPage[_0x86cc[26]](_0x86cc[97]);
+            _0x1bf8x10 = nextPage[_0x86cc[27]](_0x1bf8x3)[_0x86cc[61]](/\?/, _0x86cc[98] + window[_0x86cc[2]][_0x86cc[1]][_0x86cc[5]](1) + _0x86cc[97]);
+        } else {
+            _0x1bf8x10 = _0x86cc[99] + tocConfig[_0x86cc[44]] + _0x86cc[100] + orderByer[_0x86cc[83]] + _0x86cc[101];
+        };
+    };
+    _0x1bf8x10 += _0x86cc[102];
+    updateScript(_0x1bf8x10);
+};
+
+function removeScript() {
+    var _0x1bf8x14 = getID(_0x86cc[103]);
+    _0x1bf8x14[_0x86cc[105]][_0x86cc[104]](_0x1bf8x14);
+};
+
+function buildLabels() {
+    var _0x1bf8x14 = document[_0x86cc[107]](_0x86cc[106]);
+    _0x1bf8x14[_0x86cc[53]] = _0x86cc[108];
+    _0x1bf8x14[_0x86cc[109]] = (tocConfig[_0x86cc[62]] === _0x86cc[32] ? window[_0x86cc[2]][_0x86cc[110]] + _0x86cc[111] + window[_0x86cc[2]][_0x86cc[112]] : tocConfig[_0x86cc[62]]) + _0x86cc[113];
+    head[_0x86cc[114]](_0x1bf8x14);
+};
+
+function updateScript(_0x1bf8x3) {
+    if (startPage == 1) {
+        removeScript();
+    };
+    feedNav[_0x86cc[41]] = tocConfig[_0x86cc[115]];
+    if (tocConfig[_0x86cc[116]] !== false) {
+        feedArchive = (tocConfig[_0x86cc[62]] === _0x86cc[32] ? window[_0x86cc[2]][_0x86cc[110]] + _0x86cc[111] + window[_0x86cc[2]][_0x86cc[112]] : tocConfig[_0x86cc[62]]) + _0x86cc[117] + tocConfig[_0x86cc[116]] + _0x1bf8x3;
+    } else {
+        feedArchive = (tocConfig[_0x86cc[62]] === _0x86cc[32] ? window[_0x86cc[2]][_0x86cc[110]] + _0x86cc[111] + window[_0x86cc[2]][_0x86cc[112]] : tocConfig[_0x86cc[62]]) + _0x86cc[118] + _0x1bf8x3;
+    };
+    var _0x1bf8x14 = document[_0x86cc[107]](_0x86cc[106]);
+    _0x1bf8x14[_0x86cc[53]] = _0x86cc[108];
+    _0x1bf8x14[_0x86cc[109]] = feedArchive;
+    _0x1bf8x14[_0x86cc[119]] = _0x86cc[103];
+    head[_0x86cc[114]](_0x1bf8x14);
+    startPage = 1;
+};
+
+function changeSort(_0x1bf8x10) {
+    removeScript();
+    tocContainer[_0x86cc[41]] = _0x86cc[32];
+    feedNav[_0x86cc[41]] = tocConfig[_0x86cc[115]];
+    var _0x1bf8x3 = document[_0x86cc[107]](_0x86cc[106]),
+        _0x1bf8xf = labelSorter[_0x86cc[14]](_0x86cc[94])[0],
+        _0x1bf8x14 = (_0x1bf8x10 !== 0) ? _0x86cc[98] + _0x1bf8x10 : _0x86cc[32];
+    _0x1bf8x3[_0x86cc[53]] = _0x86cc[108];
+    _0x1bf8x3[_0x86cc[119]] = _0x86cc[103];
+    _0x1bf8x3[_0x86cc[109]] = (tocConfig[_0x86cc[62]] === _0x86cc[32] ? window[_0x86cc[2]][_0x86cc[110]] + _0x86cc[111] + window[_0x86cc[2]][_0x86cc[112]] : tocConfig[_0x86cc[62]]) + _0x86cc[118] + _0x1bf8x14 + _0x86cc[120] + tocConfig[_0x86cc[44]] + _0x86cc[100] + orderByer[_0x86cc[83]] + _0x86cc[102];
+    head[_0x86cc[114]](_0x1bf8x3);
+    _0x1bf8xf[_0x86cc[92]] = true;
+    orderByer[_0x86cc[92]] = true;
+    window[_0x86cc[2]][_0x86cc[1]] = _0x1bf8x10;
+};
+
+function searchPost() {
+    removeScript();
+    tocContainer[_0x86cc[41]] = _0x86cc[32];
+    resultDesc[_0x86cc[41]] = _0x86cc[32];
+    feedNav[_0x86cc[41]] = tocConfig[_0x86cc[121]];
+    var _0x1bf8x14 = document[_0x86cc[107]](_0x86cc[106]);
+    _0x1bf8x14[_0x86cc[53]] = _0x86cc[108];
+    _0x1bf8x14[_0x86cc[119]] = _0x86cc[103];
+    _0x1bf8x14[_0x86cc[109]] = (tocConfig[_0x86cc[62]] === _0x86cc[32] ? window[_0x86cc[2]][_0x86cc[110]] + _0x86cc[111] + window[_0x86cc[2]][_0x86cc[112]] : tocConfig[_0x86cc[62]]) + _0x86cc[122] + input[_0x86cc[83]] + _0x86cc[123];
+    head[_0x86cc[114]](_0x1bf8x14);
+    window[_0x86cc[2]][_0x86cc[1]] = _0x86cc[4];
+    return false;
+};
+getID(_0x86cc[20])[_0x86cc[124]] = function () {
+    return searchPost();
+};
+orderByer[_0x86cc[125]] = function () {
+    changeSort(0);
+};
+labelSorter[_0x86cc[14]](_0x86cc[94])[0][_0x86cc[125]] = function () {
+    changeSort(this[_0x86cc[83]]);
+};
+window[_0x86cc[126]] = function () {
+    initResult(0);
+    buildLabels();
+    window[_0x86cc[2]][_0x86cc[1]] = _0x86cc[3];
+};
